@@ -1,13 +1,16 @@
+"junegunn / vim-plug package manager
 call plug#begin()
      
      Plug 'vimwiki/vimwiki'
      Plug 'vim-scripts/indentpython.vim'
-
+	 Plug 'vim-syntastic/syntastic'
+	 Plug 'morhetz/gruvbox'
+	 Plug 'vim-syntastic/syntastic'
 call plug#end()
  
 syntax on
 set nu
-colorscheme slate
+"colorscheme slate
 
 set nocompatible
 filetype plugin on
@@ -24,3 +27,9 @@ let wiki_2 = {}
 let wiki_2.path = '~/private'
 let wiki_2.path_html = '~/private_html'
 let g:vimwiki_list = [wiki_1, wiki_2]
+
+"Gruvbox colorscheme
+autocmd vimenter * colorscheme gruvbox
+set background=dark
+
+
