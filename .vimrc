@@ -6,6 +6,7 @@ call plug#begin()
 	 Plug 'vim-syntastic/syntastic'
 	 Plug 'morhetz/gruvbox'
 	 Plug 'vim-syntastic/syntastic'
+	 Plug 'preservim/nerdtree'
 call plug#end()
  
 syntax on
@@ -32,4 +33,10 @@ let g:vimwiki_list = [wiki_1, wiki_2]
 autocmd vimenter * colorscheme gruvbox
 set background=dark
 
+"NerdTree shortcut
+map <C-n> :NERDTreeToggle<CR>
 
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
